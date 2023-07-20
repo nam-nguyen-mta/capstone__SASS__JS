@@ -1,0 +1,191 @@
+﻿@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Navigation */
+nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+            nav ul li a {
+                color: #333;
+                text-decoration: none;
+                padding: 5px;
+            }
+
+/* Content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+    .search-bar input[type="text"] {
+        padding: 5px;
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .search-bar button {
+        padding: 5px 10px;
+    }
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    object-position: center'
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+ /* CSS cho khung chứa thông tin giỏ hàng */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 600px;
+    max-width: 800px; 
+    padding: 30px;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ddd; /* Đường viền giữa các item trong giỏ hàng */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+.cart-item img {
+    max-width: 80px; /* Điều chỉnh kích thước ảnh sản phẩm */
+    margin-right: 10px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-label {
+    margin-right: 5px;
+}
+
+.quantity-input {
+    width: 50px; /* Điều chỉnh kích thước ô nhập số lượng */
+    text-align: center;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cart-quantity {
+    font-size: 16px;
+    color: #666;
+}
+
+.total-label {
+    font-weight: bold;
+}
